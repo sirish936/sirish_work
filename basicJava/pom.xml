@@ -3,12 +3,11 @@
   <groupId>com.sirish.core</groupId>
   <artifactId>basicJava</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  
-  <dependencies>
+ <dependencies>
   	<dependency>
-   	 	<groupId>org.apache.poi</groupId>
+		<groupId>org.apache.poi</groupId>
     	<artifactId>poi-ooxml</artifactId>
     	<version>3.8-beta4</version>
-	</dependency>
-  </dependencies>
+  	</dependency>
+ </dependencies>
 </project>
