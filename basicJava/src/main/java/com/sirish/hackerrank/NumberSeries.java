@@ -8,6 +8,7 @@ import java.util.Scanner;
 /***
  * Java class to print the numbers of the series : a+2^0b,a+2^0b+2^1b,a+2^0b+2^1b+2^2b,....+ a+2^0b+2^1b+2^(n-1)b
  */
+@SuppressWarnings("resource")
 public class NumberSeries {
 	public static void main(final String[] args) {
 

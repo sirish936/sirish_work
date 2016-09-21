@@ -1,7 +1,7 @@
 package com.sirish.hackerrank;
 
 import java.util.Scanner;
-
+@SuppressWarnings("resource")
 public class staticAreaTest {
 	static int breath;
 	static int height;

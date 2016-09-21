@@ -16,9 +16,6 @@ public class StudentDemo {
 		final ArrayList<Student> al = new ArrayList<Student>();
 		final Student s1 = new Student();
 		final Student s2 = new Student();
-		final Student s3 = new Student();
-		final Student s4 = new Student();
-		final Student s5 = new Student();
 
 		s1.sname = "amulya";
 		s1.rollno = 1;

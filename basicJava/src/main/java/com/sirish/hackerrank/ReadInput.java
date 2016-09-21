@@ -1,7 +1,7 @@
 package com.sirish.hackerrank;
 
 import java.util.Scanner;
-
+@SuppressWarnings("resource")
 public class ReadInput {
 	public static void main(final String[] args) {
 		final Scanner scan = new Scanner(System.in);

@@ -1,7 +1,7 @@
 package com.sirish.hackerrank;
 
 import java.util.Scanner;
-
+@SuppressWarnings("resource")
 public class PrintFormat {
 	public static void main(final String[] args) {
 		final Scanner sc = new Scanner(System.in);

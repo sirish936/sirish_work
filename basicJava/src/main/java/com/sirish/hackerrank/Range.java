@@ -1,7 +1,7 @@
 package com.sirish.hackerrank;
 
 import java.util.Scanner;
-
+@SuppressWarnings("resource")
 public class Range {
 	public static void main(final String[] argh) {
 
