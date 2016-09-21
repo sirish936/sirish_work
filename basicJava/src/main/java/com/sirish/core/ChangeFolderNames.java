@@ -41,7 +41,6 @@ public class ChangeFolderNames {
 				fileNameBuffer.append(fileNameArray[i]);
 				fileNameBuffer.append(" ");
 				counter++;
-			}
 			
 			String finalName = new String(fileNameBuffer).replaceAll("hindi", "").trim(); 
 			finalName = finalName.replaceAll("600mbshaanig asian planet", "").trim();
@@ -55,6 +54,7 @@ public class ChangeFolderNames {
 			
 			 File newDir = new File(dir.getParent() + "/" + finalName);
 			 dir.renameTo(newDir);
+		}
 		}
 	}
 
