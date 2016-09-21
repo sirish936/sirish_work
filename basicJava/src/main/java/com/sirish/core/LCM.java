@@ -2,6 +2,7 @@ package com.sirish.core;
 
 import java.io.IOException;
 import java.util.Scanner;
+@SuppressWarnings("resource")
 
 public class LCM {
 	public static void main(final String args[]) throws IOException {

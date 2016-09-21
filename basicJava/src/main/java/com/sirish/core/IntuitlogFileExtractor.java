@@ -45,6 +45,7 @@ public class IntuitlogFileExtractor {
 
 		final ArrayList<String> searchStrList = getSearchStrings();
 		final BufferedWriter wr = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(filePath + "//result.txt")));
+		@SuppressWarnings("resource")
 		final BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream(logFileWithPath)));
 		String line = null;
 

@@ -7,9 +7,7 @@ import org.w3c.dom.Attr;
 import org.w3c.dom.Document;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
-
 public class MissedOutExtractionFiles {
-
 	final static String providerPropertyLookUpPath = "/home/sirish/work/fiport/batchJobs/createSchema/src/main/resources/ProvidersFromAnnotations/providerpropertylookup.xml";
 
 	public static void main(final String[] args) {
@@ -34,8 +32,7 @@ public class MissedOutExtractionFiles {
 			final MappingObjectNew mappingObj = MappingObjectNew.getMappingObject();
 			mappingObj.setKey(providerPropertyValue);
 
-			final Node propertyFileNode = node.getChildNodes().item(3);
-			final String providerPropertyFileName = propertyFileNode.getNodeValue();
+			//final Node propertyFileNode = node.getChildNodes().item(3);
 
 		}
 	}

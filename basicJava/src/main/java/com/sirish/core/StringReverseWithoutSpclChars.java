@@ -3,7 +3,7 @@ package com.sirish.core;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
-
+@SuppressWarnings("resource")
 public class StringReverseWithoutSpclChars {
 	
 	public static void main(String[] args) {

@@ -18,7 +18,8 @@ public class GenericTest {
 		}
 	}
 
-	public static void addData(final ArrayList al) {
+	@SuppressWarnings("unchecked")
+	public static void addData(@SuppressWarnings("rawtypes") final ArrayList al) {
 		al.add(10);
 		al.add(20);
 		al.add(true);

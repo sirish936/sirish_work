@@ -6,6 +6,7 @@ public class Hai {
 
 	public static void main(final String args[]) {
 
+		@SuppressWarnings("resource")
 		final Scanner sc = new Scanner(System.in);
 		final int input = sc.nextInt();
 		System.out.println(Hai.Grade(input));

@@ -8,6 +8,7 @@ public class AccountChainedComparator implements Comparator<Account>{
 
 List<Comparator<Account>> listComparators; 
 	
+	@SafeVarargs
 	AccountChainedComparator(Comparator<Account>...comparator){
 		listComparators = Arrays.asList(comparator) ;
 	}

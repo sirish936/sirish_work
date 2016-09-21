@@ -9,6 +9,7 @@ import java.io.OutputStreamWriter;
 
 public class JsonParser_Naveen {
 
+	@SuppressWarnings("resource")
 	public static void main(final String[] args) throws IOException {
 
 		final BufferedReader reader = new BufferedReader(new FileReader(new File("")));

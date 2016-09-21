@@ -22,7 +22,6 @@ public class AlphabeticalSorting {
 
 			final List<String> lineList = new ArrayList<String>();
 			String line;
-			final String inputData;
 			while ((line = bufferedReader.readLine()) != null) {
 				// line = line.substring(line.indexOf(":") + 1, line.inde xOf(";"));
 				lineList.add(line);

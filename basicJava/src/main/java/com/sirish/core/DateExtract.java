@@ -7,6 +7,7 @@ import java.util.regex.Pattern;
 
 public class DateExtract {
 
+	@SuppressWarnings("static-access")
 	public static void main(final String[] args) {
 
 		String dateStr = "August 21st, 2015";
@@ -27,7 +28,6 @@ public class DateExtract {
 			}
 		}
 		final Calendar cal = Calendar.getInstance();
-		final Date today = cal.getTime();
 		cal.add(Calendar.MONTH, 1); // setting previous year
 		final Date lastcsdDate = cal.getTime();
 
