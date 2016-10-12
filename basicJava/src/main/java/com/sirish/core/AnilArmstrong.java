@@ -4,9 +4,9 @@ public class AnilArmstrong {
 	
 public static void main(String[] args) {
 	
-	int number = 152;
+	int number = 153;
 	int input = number;
-	int x=number;
+	int x;
 	int sum = 0;
 	while(number>0){
 		x = number%10;

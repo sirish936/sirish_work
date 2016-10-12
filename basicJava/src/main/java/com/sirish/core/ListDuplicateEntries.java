@@ -3,8 +3,10 @@ package com.sirish.core;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 
 public class ListDuplicateEntries {
 
@@ -35,7 +37,19 @@ public class ListDuplicateEntries {
 		// for (int i = 0; i < output.length; i++) {
 		// System.out.println("Duplicate elements are" + output[i]);
 		// }
-
+		
+		Set hashSet = new HashSet();
+		hashSet.add(null);
+		hashSet.add(null);
+		System.out.println(hashSet.size());
+		
+		
+		Map myMap = new HashMap();
+		myMap.put(1, 1);
+		myMap.put(null, null);
+		myMap.put(null, null);
+		System.out.println(myMap.size());
+		
 		for (final Map.Entry<Integer, Integer> entry : countMap.entrySet()) {
 			System.out.println("Number : " + entry.getKey() + " is repeated for : " + entry.getValue() + " times");
 		}
