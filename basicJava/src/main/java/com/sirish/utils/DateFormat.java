@@ -1,4 +1,4 @@
-package com.sirish.work;
+package com.sirish.utils;
 
 public enum DateFormat {
 

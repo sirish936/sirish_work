@@ -10,6 +10,7 @@ import java.util.Set;
 
 public class ListDuplicateEntries {
 
+	@SuppressWarnings({ "rawtypes", "unchecked" })
 	public static void main(final String[] args) {
 
 		final List<Integer> intList = new ArrayList<Integer>();
@@ -37,19 +38,18 @@ public class ListDuplicateEntries {
 		// for (int i = 0; i < output.length; i++) {
 		// System.out.println("Duplicate elements are" + output[i]);
 		// }
-		
-		Set hashSet = new HashSet();
+
+		final Set hashSet = new HashSet();
 		hashSet.add(null);
 		hashSet.add(null);
 		System.out.println(hashSet.size());
-		
-		
-		Map myMap = new HashMap();
+
+		final Map myMap = new HashMap();
 		myMap.put(1, 1);
 		myMap.put(null, null);
 		myMap.put(null, null);
 		System.out.println(myMap.size());
-		
+
 		for (final Map.Entry<Integer, Integer> entry : countMap.entrySet()) {
 			System.out.println("Number : " + entry.getKey() + " is repeated for : " + entry.getValue() + " times");
 		}

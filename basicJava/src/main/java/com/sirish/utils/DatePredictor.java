@@ -1,4 +1,4 @@
-package com.sirish.work;
+package com.sirish.utils;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;

@@ -1,11 +1,11 @@
-package com.sirish.work;
+package com.sirish.test.utils;
 
 
 import org.junit.Assert;
 import org.junit.Test;
 
-import com.sirish.work.DateFormat;
-import com.sirish.work.DateFormatter;
+import com.sirish.utils.DateFormat;
+import com.sirish.utils.DateFormatter;
 
 
 public class TestDateFormatter {
