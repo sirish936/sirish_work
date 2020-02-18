@@ -29,6 +29,8 @@ public enum DateFormat {
 	MM_DD_WITH_HYHEN("MM-dd"),
 	MM_DD_WITH_SLASH("MM/dd");
 	
+	YYMMDD_WITHOUT_SPACE("yyMMdd");
+	
 	
 	String format;
 

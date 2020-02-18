@@ -17,7 +17,7 @@ public class ReversedBinary {
 			System.out.println("Error: Not a positive integer");
 		} else {
 
-			System.out.print("Convert to binary is:");
+			System.out.print("Convert to binary is :");
 			System.out.print(binaryform(number));
 		}
 	}

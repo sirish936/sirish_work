@@ -8,9 +8,9 @@ public class DateTest {
 
 	public static void main(final String[] args) throws ParseException {
 
-		final String dueDate = "May 2015";
+		final String dueDate = "200912";
 
-		final SimpleDateFormat dateFormat = new SimpleDateFormat("MMM yyyy");
+		final SimpleDateFormat dateFormat = new SimpleDateFormat("yyMMdd");
 		final Date convertedDate = dateFormat.parse(dueDate);
 
 		System.out.println(convertedDate);

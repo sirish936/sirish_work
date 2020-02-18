@@ -1,7 +1,11 @@
 package com.sirish.core;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.Date;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
@@ -21,8 +25,24 @@ public class DateDiff {
 
 		final long timeDiff = getDateDiff(new Date(), oldDate);
 		System.out.println("Time Difference is " + timeDiff);
-
+		
+		final int value = getDateDiffs(oldDate,new Date());
+		System.out.println("value "+value);
+		
+		List list = new ArrayList<>();
+		list.add(oldDate);
+		list.add(new Date());
+		System.out.println(list);
+		Collections.sort(list, new Comparator<Date>()
+                {
+                    public int compare(final Date object1, final Date object2)
+                    {
+                        return getDateDiffs(object1, object2);
+                    }
+                });
+		System.out.println(list);
 	}
+
 
 	static long abc = 1422000000000l;
 
@@ -30,4 +50,21 @@ public class DateDiff {
 		final long diffInMillies = date1.getTime() - abc;
 		return Math.abs(TimeUnit.DAYS.convert(diffInMillies, TimeUnit.MILLISECONDS));
 	}
+	
+	static int getDateDiffs(final Date date1, final Date date2)
+	    {
+	       
+	        if (date2 != null && date1 != null)
+	        {
+	            return date2.compareTo(date1);
+	        }
+	        else if (date2 != null)
+	        {
+	            return 1;
+	        }
+	        else
+	        {
+	            return 0;
+	        }
+	    }
 }

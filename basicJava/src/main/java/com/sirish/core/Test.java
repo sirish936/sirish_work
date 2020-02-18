@@ -11,5 +11,15 @@ public class Test extends Thread implements Runnable{
 		}catch(Exception  e){
 			System.out.println(e);
 		}
+		
+		String x2 = "0.35.02";
+		String x1 = "0.35.01";
+		
+		if(x2.compareTo(x1)>1){
+			System.out.println("greater"+x2);
+		}else{
+			System.out.println("greater"+x1);
+		}
+		
 	}
 }

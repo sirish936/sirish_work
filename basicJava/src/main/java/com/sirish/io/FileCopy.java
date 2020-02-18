@@ -44,7 +44,7 @@ public class FileCopy {
 			}
 			
 			
-			private static File[] readFiles(String filePath) {
+			public static File[] readFiles(String filePath) {
 
 				File file = new File(filePath);
 
