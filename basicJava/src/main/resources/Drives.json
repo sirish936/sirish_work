@@ -1,0 +1,592 @@
+[
+	{
+		"@odata.etag": "W/\"ece58123\"",
+		"@odata.id": "/redfish/v1/Systems/1/Storage/DE009000",
+		"@odata.type": "#Storage.v1_13_0.Storage",
+		"Id": "DE009000",
+		"Name": "HPE NS204i-d Gen11 Boot Controller",
+		"Actions": {
+			"#Storage.ResetToDefaults": {
+				"target": "/redfish/v1/Systems/1/Storage/DE009000/Actions/Storage.ResetToDefaults",
+				"ResetType@Redfish.AllowableValues": [
+					"ResetAll",
+					"PreserveVolumes"
+				]
+			}
+		},
+		"Status": {
+			"State": "Enabled",
+			"HealthRollup": "OK"
+		},
+		"AutoVolumeCreate": "RAID1",
+		"Drives@odata.count": 2,
+		"Drives": [
+			{
+				"@odata.etag": "W/\"1d15e9d4\"",
+				"@odata.id": "/redfish/v1/Systems/1/Storage/DE009000/Drives/1",
+				"@odata.type": "#Drive.v1_17_0.Drive",
+				"@Redfish.WriteableProperties": [
+					"LocationIndicatorActive",
+					"StatusIndicator"
+				],
+				"Id": "1",
+				"Name": "480GB 16G NVMe SSD",
+				"Status": {
+					"State": "Enabled",
+					"Health": "OK"
+				},
+				"BlockSizeBytes": 512,
+				"CapableSpeedGbs": 16.0,
+				"CapacityBytes": 480103981056,
+				"DriveFormFactor": "M2_2280",
+				"EncryptionAbility": "None",
+				"EncryptionStatus": "Unencrypted",
+				"FailurePredicted": false,
+				"HotspareType": "None",
+				"Identifiers": [
+					{
+						"DurableNameFormat": "EUI",
+						"DurableName": "12:af:75:e2:02:f2:e5:fd"
+					}
+				],
+				"LocationIndicatorActive": false,
+				"Links": {
+					"Storage": {
+						"@odata.id": "/redfish/v1/Systems/1/Storage/DE009000"
+					},
+					"Volumes": [
+						{
+							"@odata.id": "/redfish/v1/Systems/1/Storage/DE009000/Volumes/1"
+						}
+					],
+					"Volumes@odata.count": 1
+				},
+				"MediaType": "SSD",
+				"Model": "VR000480KXLXF",
+				"Multipath": false,
+				"NegotiatedSpeedGbs": 16.0,
+				"PhysicalLocation": {
+					"PartLocation": {
+						"LocationOrdinalValue": 1,
+						"LocationType": "Bay",
+						"ServiceLabel": "Slot=19:Bay=1"
+					}
+				},
+				"PredictedMediaLifeLeftPercent": 100.0,
+				"Protocol": "NVMe",
+				"Revision": "HPK2",
+				"SerialNumber": "S711NA0W707162",
+				"SlotCapableProtocols": [
+					"NVMe"
+				],
+				"StatusIndicator@Redfish.AllowableValues": [
+					"OK",
+					"Fail"
+				],
+				"StatusIndicator": "OK",
+				"WriteCacheEnabled": false,
+				"Operations": []
+			},
+			{
+				"@odata.etag": "W/\"80943ce4\"",
+				"@odata.id": "/redfish/v1/Systems/1/Storage/DE009000/Drives/2",
+				"@odata.type": "#Drive.v1_17_0.Drive",
+				"@Redfish.WriteableProperties": [
+					"LocationIndicatorActive",
+					"StatusIndicator"
+				],
+				"Id": "2",
+				"Name": "480GB 16G NVMe SSD",
+				"Status": {
+					"State": "Enabled",
+					"Health": "OK"
+				},
+				"BlockSizeBytes": 512,
+				"CapableSpeedGbs": 16.0,
+				"CapacityBytes": 480103981056,
+				"DriveFormFactor": "M2_2280",
+				"EncryptionAbility": "None",
+				"EncryptionStatus": "Unencrypted",
+				"FailurePredicted": false,
+				"HotspareType": "None",
+				"Identifiers": [
+					{
+						"DurableNameFormat": "EUI",
+						"DurableName": "36:46:7e:53:02:f2:e5:fd"
+					}
+				],
+				"LocationIndicatorActive": false,
+				"Links": {
+					"Storage": {
+						"@odata.id": "/redfish/v1/Systems/1/Storage/DE009000"
+					},
+					"Volumes": [
+						{
+							"@odata.id": "/redfish/v1/Systems/1/Storage/DE009000/Volumes/1"
+						}
+					],
+					"Volumes@odata.count": 1
+				},
+				"MediaType": "SSD",
+				"Model": "VR000480KXLXF",
+				"Multipath": false,
+				"NegotiatedSpeedGbs": 16.0,
+				"PhysicalLocation": {
+					"PartLocation": {
+						"LocationOrdinalValue": 2,
+						"LocationType": "Bay",
+						"ServiceLabel": "Slot=19:Bay=2"
+					}
+				},
+				"PredictedMediaLifeLeftPercent": 100.0,
+				"Protocol": "NVMe",
+				"Revision": "HPK2",
+				"SerialNumber": "S711NA0W707159",
+				"SlotCapableProtocols": [
+					"NVMe"
+				],
+				"StatusIndicator@Redfish.AllowableValues": [
+					"OK",
+					"Fail"
+				],
+				"StatusIndicator": "OK",
+				"WriteCacheEnabled": false,
+				"Operations": []
+			}
+		],
+		"Volumes": [
+			{
+				"@odata.etag": "W/\"fafedce2\"",
+				"@odata.id": "/redfish/v1/Systems/1/Storage/DE009000/Volumes/1",
+				"@odata.type": "#Volume.v1_9_0.Volume",
+				"@Redfish.WriteableProperties": [
+					"DisplayName"
+				],
+				"Id": "1",
+				"Name": "VD_1   ",
+				"Status": {
+					"State": "Enabled",
+					"Health": "OK"
+				},
+				"BlockSizeBytes": 512,
+				"CapacityBytes": 480036519936,
+				"DisplayName": "VD_1   ",
+				"DisplayName@Redfish.AllowablePattern": "^.{1,15}$",
+				"Encrypted": false,
+				"Identifiers": [
+					{
+						"DurableNameFormat": "EUI",
+						"DurableName": "00:50:43:93:01:00:00:01"
+					}
+				],
+				"InitializeMethod": "Background",
+				"IsBootCapable": true,
+				"IOPerfModeEnabled": false,
+				"Links": {
+					"Drives@odata.count": 2,
+					"Drives": [
+						{
+							"@odata.id": "/redfish/v1/Systems/1/Storage/DE009000/Drives/1"
+						},
+						{
+							"@odata.id": "/redfish/v1/Systems/1/Storage/DE009000/Drives/2"
+						}
+					],
+					"DedicatedSpareDrives@odata.count": 0,
+					"DedicatedSpareDrives": []
+				},
+				"LogicalUnitNumber": 1,
+				"OptimumIOSizeBytes": 131072,
+				"RAIDType": "RAID1",
+				"ReadCachePolicy": "Off",
+				"StripSizeBytes": 131072,
+				"VolumeUsage": "Data",
+				"WriteCachePolicy": "Off",
+				"Operations": []
+			}
+		],
+		"Controllers": [
+			{
+				"@odata.etag": "W/\"fa3ebe3d\"",
+				"@odata.id": "/redfish/v1/Systems/1/Storage/DE009000/Controllers/0",
+				"@odata.type": "#StorageController.v1_5_0.StorageController",
+				"Id": "0",
+				"Name": "HPE NS204i-d Gen11 Boot Controller",
+				"CacheSummary": {
+					"TotalCacheSizeMiB": 0,
+					"PersistentCacheSizeMiB": 0,
+					"Status": {
+						"Health": "OK",
+						"State": "Absent"
+					}
+				},
+				"ControllerRates": {
+					"@Redfish.WriteableProperties": [
+						"RebuildRatePercent"
+					],
+					"RebuildRatePercent@Redfish.AllowableNumbers": [
+						10,
+						50,
+						100
+					],
+					"RebuildRatePercent": 50
+				},
+				"FirmwareVersion": "1.2.14.1013",
+				"Identifiers": [
+					{
+						"DurableName": "51402ec02144e29c",
+						"DurableNameFormat": "NAA"
+					}
+				],
+				"Links": {
+					"PCIeFunctions@odata.count": 0,
+					"PCIeFunctions": []
+				},
+				"Location": {
+					"PartLocation": {
+						"ServiceLabel": "Slot 19",
+						"LocationType": "Slot",
+						"LocationOrdinalValue": 19
+					}
+				},
+				"Manufacturer": "HPE",
+				"Model": "HPE NS204i-d Gen11 Boot Controller",
+				"PartNumber": "P44843-001",
+				"PCIeInterface": {
+					"MaxPCIeType": "Gen3",
+					"PCIeType": "Gen3",
+					"MaxLanes": 4,
+					"LanesInUse": 4
+				},
+				"SKU": "P39568-B21",
+				"SerialNumber": "PYDPF0ARHI807O",
+				"SpeedGbps": 16,
+				"Status": {
+					"State": "Enabled",
+					"Health": "OK"
+				},
+				"SupportedControllerProtocols": [
+					"PCIe"
+				],
+				"SupportedDeviceProtocols": [
+					"NVMe"
+				],
+				"SupportedRAIDTypes": [
+					"RAID1"
+				]
+			}
+		],
+		"Annotations": {},
+		"StorageControllers": [
+			{
+				"@odata.etag": "W/\"fa3ebe3d\"",
+				"@odata.id": "/redfish/v1/Systems/1/Storage/DE009000/Controllers/0",
+				"@odata.type": "#StorageController.v1_5_0.StorageController",
+				"Id": "0",
+				"Name": "HPE NS204i-d Gen11 Boot Controller",
+				"CacheSummary": {
+					"TotalCacheSizeMiB": 0,
+					"PersistentCacheSizeMiB": 0,
+					"Status": {
+						"Health": "OK",
+						"State": "Absent"
+					}
+				},
+				"ControllerRates": {
+					"@Redfish.WriteableProperties": [
+						"RebuildRatePercent"
+					],
+					"RebuildRatePercent@Redfish.AllowableNumbers": [
+						10,
+						50,
+						100
+					],
+					"RebuildRatePercent": 50
+				},
+				"FirmwareVersion": "1.2.14.1013",
+				"Identifiers": [
+					{
+						"DurableName": "51402ec02144e29c",
+						"DurableNameFormat": "NAA"
+					}
+				],
+				"Links": {
+					"PCIeFunctions@odata.count": 0,
+					"PCIeFunctions": []
+				},
+				"Location": {
+					"PartLocation": {
+						"ServiceLabel": "Slot 19",
+						"LocationType": "Slot",
+						"LocationOrdinalValue": 19
+					}
+				},
+				"Manufacturer": "HPE",
+				"Model": "HPE NS204i-d Gen11 Boot Controller",
+				"PartNumber": "P44843-001",
+				"PCIeInterface": {
+					"MaxPCIeType": "Gen3",
+					"PCIeType": "Gen3",
+					"MaxLanes": 4,
+					"LanesInUse": 4
+				},
+				"SKU": "P39568-B21",
+				"SerialNumber": "PYDPF0ARHI807O",
+				"SpeedGbps": 16,
+				"Status": {
+					"State": "Enabled",
+					"Health": "OK"
+				},
+				"SupportedControllerProtocols": [
+					"PCIe"
+				],
+				"SupportedDeviceProtocols": [
+					"NVMe"
+				],
+				"SupportedRAIDTypes": [
+					"RAID1"
+				]
+			}
+		]
+	},
+	{
+		"@odata.id": "/redfish/v1/Systems/1/Storage/DE00B000",
+		"@odata.type": "#Storage.v1_14_0.Storage",
+		"Actions": {
+			"#Storage.ResetToDefaults": {
+				"target": "/redfish/v1/Systems/1/Storage/DE00B000/Actions/Storage.ResetToDefaults",
+				"ResetType@Redfish.AllowableValues": [
+					"ResetAll",
+					"PreserveVolumes"
+				]
+			}
+		},
+		"Id": "DE00B000",
+		"Name": "HPE SR416ie-m Gen11",
+		"Status": {
+			"HealthRollup": "OK",
+			"State": "Enabled"
+		},
+		"EncryptionMode": "Disabled",
+		"Controllers": [
+			{
+				"@odata.id": "/redfish/v1/Systems/1/Storage/DE00B000/Controllers/0",
+				"@odata.type": "#StorageController.v1_6_0.StorageController",
+				"Id": "0",
+				"Name": "HPE SR416ie-m Gen11",
+				"FirmwareVersion": "03.01.23.072",
+				"Identifiers": [
+					{
+						"DurableName": "51402EC0213E5F60",
+						"DurableNameFormat": "NAA"
+					}
+				],
+				"Location": {
+					"PartLocation": {
+						"LocationType": "Slot",
+						"ServiceLabel": "Slot=1",
+						"LocationOrdinalValue": 1
+					}
+				},
+				"Manufacturer": "HPE",
+				"Model": "HPE SR416ie-m Gen11",
+				"PartNumber": "P60564-001",
+				"SerialNumber": "PXTVN0ARHID054 ",
+				"SpeedGbps": 22.5,
+				"SKU": "P44838-001",
+				"Status": {
+					"Health": "OK",
+					"State": "Enabled"
+				},
+				"SupportedDeviceProtocols": [
+					"SAS",
+					"SATA",
+					"NVMe"
+				],
+				"SupportedControllerProtocols": [
+					"PCIe"
+				],
+				"CacheSummary": {
+					"TotalCacheSizeMiB": 4096,
+					"PersistentCacheSizeMiB": 3644,
+					"Status": {
+						"Health": "OK",
+						"State": "Disabled"
+					}
+				},
+				"PCIeInterface": {
+					"MaxPCIeType": "Gen4",
+					"PCIeType": "Gen4",
+					"MaxLanes": 8,
+					"LanesInUse": 8
+				},
+				"SupportedRAIDTypes": [
+					"RAID0",
+					"RAID1",
+					"RAID10",
+					"RAID5",
+					"RAID50",
+					"RAID6",
+					"RAID60",
+					"RAID1Triple",
+					"RAID10Triple",
+					"None"
+				],
+				"ControllerRates": {
+					"@Redfish.WriteableProperties": []
+				},
+				"Ports": {
+					"@odata.id": "/redfish/v1/Systems/1/Storage/DE00B000/Controllers/0/Ports"
+				},
+				"@odata.etag": "\"F0C8C9AD\""
+			}
+		],
+		"Drives@odata.count": 0,
+		"Drives": [],
+		"Volumes": [],
+		"@odata.etag": "\"3E9B7E23\"",
+		"Annotations": {
+			"Volumes": {
+				"@odata.id": "/redfish/v1/Systems/1/Storage/DE00B000/Volumes/Capabilities",
+				"@odata.type": "#Volume.v1_8_0.Volume",
+				"Id": "Capabilities",
+				"Name": "Capabilities for the volume collection",
+				"Name@Redfish.OptionalOnCreate": true,
+				"Name@Redfish.AllowablePattern": "^[ !\"#$%&'()*+,-.\\/\\w:;<=>?@[\\]\\^`{\\|}~]{1,64}$",
+				"RAIDType@Redfish.RequiredOnCreate": true,
+				"RAIDType@Redfish.AllowableValues": [
+					"RAID0",
+					"RAID1",
+					"RAID10",
+					"RAID5",
+					"RAID50",
+					"RAID6",
+					"RAID60",
+					"RAID1Triple",
+					"RAID10Triple"
+				],
+				"CapacityBytes@Redfish.OptionalOnCreate": true,
+				"CapacityBytes@Redfish.AllowableNumbers": [],
+				"StripSizeBytes@Redfish.OptionalOnCreate": true,
+				"StripSizeBytes@Redfish.AllowableNumbers": [
+					"16384",
+					"32768",
+					"65536",
+					"131072",
+					"262144",
+					"524288",
+					"1048576"
+				],
+				"IOPerfModeEnabled@Redfish.OptionalOnCreate": true,
+				"IOPerfModeEnabled@Redfish.UpdatableAfterCreate": true,
+				"MediaSpanCount@Redfish.OptionalOnCreate": true,
+				"MediaSpanCount@Redfish.AllowableNumbers": [],
+				"DisplayName@Redfish.OptionalOnCreate": true,
+				"DisplayName@Redfish.UpdatableAfterCreate": true,
+				"DisplayName@Redfish.AllowablePattern": "^[ !\"#$%&'()*+,-.\\/\\w:;<=>?@[\\]\\^`{\\|}~]{1,64}$",
+				"ReadCachePolicy@Redfish.OptionalOnCreate": true,
+				"ReadCachePolicy@Redfish.AllowableValues": [
+					"Off",
+					"ReadAhead"
+				],
+				"ReadCachePolicy@Redfish.UpdatableAfterCreate": true,
+				"WriteCachePolicy@Redfish.OptionalOnCreate": true,
+				"WriteCachePolicy@Redfish.AllowableValues": [
+					"Off",
+					"ProtectedWriteBack",
+					"UnprotectedWriteBack"
+				],
+				"WriteCachePolicy@Redfish.UpdatableAfterCreate": true,
+				"VolumeUsage@Redfish.OptionalOnCreate": true,
+				"VolumeUsage@Redfish.AllowableValues": [
+					"Data"
+				],
+				"InitializeMethod@Redfish.OptionalOnCreate": true,
+				"InitializeMethod@Redfish.AllowableValues": [
+					"Background",
+					"Foreground"
+				],
+				"Links@Redfish.RequiredOnCreate": true,
+				"Links": {
+					"Drives@Redfish.RequiredOnCreate": true,
+					"DedicatedSpareDrives@Redfish.OptionalOnCreate": true,
+					"DedicatedSpareDrives@Redfish.UpdatableAfterCreate": true
+				},
+				"@odata.etag": "\"D886E81D\""
+			}
+		},
+		"StorageControllers": [
+			{
+				"@odata.id": "/redfish/v1/Systems/1/Storage/DE00B000/Controllers/0",
+				"@odata.type": "#StorageController.v1_6_0.StorageController",
+				"Id": "0",
+				"Name": "HPE SR416ie-m Gen11",
+				"FirmwareVersion": "03.01.23.072",
+				"Identifiers": [
+					{
+						"DurableName": "51402EC0213E5F60",
+						"DurableNameFormat": "NAA"
+					}
+				],
+				"Location": {
+					"PartLocation": {
+						"LocationType": "Slot",
+						"ServiceLabel": "Slot=1",
+						"LocationOrdinalValue": 1
+					}
+				},
+				"Manufacturer": "HPE",
+				"Model": "HPE SR416ie-m Gen11",
+				"PartNumber": "P60564-001",
+				"SerialNumber": "PXTVN0ARHID054 ",
+				"SpeedGbps": 22.5,
+				"SKU": "P44838-001",
+				"Status": {
+					"Health": "OK",
+					"State": "Enabled"
+				},
+				"SupportedDeviceProtocols": [
+					"SAS",
+					"SATA",
+					"NVMe"
+				],
+				"SupportedControllerProtocols": [
+					"PCIe"
+				],
+				"CacheSummary": {
+					"TotalCacheSizeMiB": 4096,
+					"PersistentCacheSizeMiB": 3644,
+					"Status": {
+						"Health": "OK",
+						"State": "Disabled"
+					}
+				},
+				"PCIeInterface": {
+					"MaxPCIeType": "Gen4",
+					"PCIeType": "Gen4",
+					"MaxLanes": 8,
+					"LanesInUse": 8
+				},
+				"SupportedRAIDTypes": [
+					"RAID0",
+					"RAID1",
+					"RAID10",
+					"RAID5",
+					"RAID50",
+					"RAID6",
+					"RAID60",
+					"RAID1Triple",
+					"RAID10Triple",
+					"None"
+				],
+				"ControllerRates": {
+					"@Redfish.WriteableProperties": []
+				},
+				"Ports": {
+					"@odata.id": "/redfish/v1/Systems/1/Storage/DE00B000/Controllers/0/Ports"
+				},
+				"@odata.etag": "\"F0C8C9AD\""
+			}
+		]
+	}
+]

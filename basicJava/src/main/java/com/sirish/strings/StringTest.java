@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class StringTest {
-	public static void main(final String[] args) {
+	public static void main(final String[] args) throws InterruptedException {
 
 		final String s = "sirish";
 		final String s2 = s;
@@ -26,5 +26,11 @@ public class StringTest {
 		for (int i = 0; i < myList.size(); i++) {
 			System.out.println(myList.get(i));
 		}
+		
+		long start = System.currentTimeMillis();
+		Thread.sleep(1000);
+		long end = System.currentTimeMillis();
+		long diff = end-start;
+		System.out.println("Total time took "+ diff);
 	}
 }

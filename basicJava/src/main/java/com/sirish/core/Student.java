@@ -1,12 +1,29 @@
 package com.sirish.core;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class Student {
-
+	
 	String name;
 	String age;
 	String weight;
+	String[] phno;
+	
+	public String[] getPhno() {
+		return phno;
+	}
+
+	public void setPhno(String[] phno) {
+		this.phno = phno;
+	}
+
+	public Student(String name, String age, String weight, String[] phnos){
+		this.name = name;
+		this.age = age;
+		this.weight = weight;
+		this.phno = phnos.clone();
+	}
 
 	public String getName() {
 		return name;

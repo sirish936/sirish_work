@@ -6,7 +6,6 @@ public class DuplicateNumbers {
 		int index = 0;
 		final int output[] = new int[10];
 		for (int number = 1; number <= 100; number++) {
-
 			if (number % 11 == 0) {
 				output[index] = number;
 				index++;
@@ -16,4 +15,9 @@ public class DuplicateNumbers {
 			System.out.println(output[i]);
 		}
 	}
+}
+
+
+private int add(int x, int y) {
+	return x+y;
 }

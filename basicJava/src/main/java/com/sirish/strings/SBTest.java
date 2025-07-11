@@ -28,6 +28,13 @@ public class SBTest {
 		Collections.sort(list);
 		System.out.println(list);
 		
+		
+		int a = 20;
+		int b = 21;
+		int s = Math.max(a, b);
+		System.out.println(s);
+				
+		
 	}
 	
 }

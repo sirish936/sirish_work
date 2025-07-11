@@ -1,11 +1,15 @@
 package com.sirish.core;
 
+import java.util.List;
+
 public class HariTest {
-
-}
-
-class HariDemo extends HariTest {
-	HariDemo test() {
-		return new HariDemo();
+	public static void main(String[] args) {
+		int i=3;
+		display(i);
+		System.out.println(i);
+	}
+	private static void display(int i) {
+		i++;
+		System.out.println(i++);
 	}
 }
