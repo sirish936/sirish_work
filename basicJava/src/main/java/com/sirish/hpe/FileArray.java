@@ -9,6 +9,7 @@ public class FileArray {
 		System.out.println(files.length);
 		System.out.println(files.length);
 		System.out.println(files.length);
+		System.out.println(files.length);
 		System.out.println(Integer.valueOf("01"));
 		System.out.println(Integer.parseInt("03"));
 		System.out.println(Integer.parseInt("10"));
