@@ -32,6 +32,7 @@ public class IteratorDemo {
 		System.out.println(l);
 
 		final List<Integer> ll = new ArrayList<Integer>();
+		final List<Integer> lll = new ArrayList<Integer>();
 		ll.add(50);
 		ll.add(20);
 		ll.add(60);
@@ -47,6 +48,9 @@ public class IteratorDemo {
 		while (it.hasNext()) {
 			System.out.println(it.next());
 		}
+		lll.add(200);
+		System.out.println(it.next());
+		
 		System.out.println();
 		// forEach loop
 		for (final Integer x : ll) {

@@ -1,5 +1,7 @@
 package com.sirish.hpe;
 
+import java.util.List;
+
 public class Baseline {
 	
 	public String baselineName;
@@ -30,5 +32,14 @@ public class Baseline {
 	public String baselieUri;
 	
 	public BaselineMetaData baselineMetaData;
+	
+	public List<Components> compList;
+	public List<Components> getCompList() {
+		return compList;
+	}
+
+	public void setCompList(List<Components> compList) {
+		this.compList = compList;
+	}
 
 }
